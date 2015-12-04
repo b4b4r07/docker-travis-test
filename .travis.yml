@@ -6,7 +6,7 @@ services:
     - docker
 
 before_script:
-    - docker build -t b4b4r07/zsh_env .
+    - docker pull b4b4r07/zplug
 
 script:
-    - docker run b4b4r07/zsh_env /bin/bash
+    - docker run -d b4b4r07/zplug zsh -c "source ~/.zplug/zplug; zplug version"
