@@ -9,4 +9,4 @@ before_script:
     - docker pull b4b4r07/zplug
 
 script:
-    - docker run -v /home/travis/b4b4r07/docker-travis-test/test:/tmp b4b4r07/zplug zsh -c "source /tmp/source_zplug.zsh"
+    - docker run zsh -c "source ~/.zplug/zplug; zplug b4b4r07/enhancd; zplug install; zplug load; type cd::cd"
