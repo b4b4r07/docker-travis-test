@@ -9,4 +9,4 @@ before_script:
     - docker build -t b4b4r07/zsh_env .
 
 script:
-    - docker run -i -t b4b4r07/zsh_env /bin/bash
+    - docker run b4b4r07/zsh_env /bin/bash
