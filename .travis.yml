@@ -9,4 +9,4 @@ before_script:
     - docker pull b4b4r07/zplug
 
 script:
-    - docker run -d b4b4r07/zplug zsh -c "source ~/.zplug/zplug; zplug version"
+    - docker run b4b4r07/zplug zsh -c "source ~/.zplug/zplug; zplug version"
